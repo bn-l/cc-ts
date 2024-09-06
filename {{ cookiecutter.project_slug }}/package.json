@@ -1,0 +1,35 @@
+{
+    "name": "{{ cookiecutter.project_slug }}",
+    "version": "0.0.1",
+    "private": {{ cookiecutter.private | lower }},
+    "description": "change",
+    "type": "module",
+    "engines": {
+        "node": ">=22"
+    },
+    "author": "bn-l",
+    "scripts": {
+        "run:file": "tsx",
+        "lint": "prettier --check . && eslint .",
+        "format": "prettier --write .",
+        "test": "vitest",
+        "bump-version": "npx bumpp"
+    },
+    "devDependencies": {
+        "@antfu/eslint-config": "^2.25.1",
+        "@types/eslint": "^9.6.0",
+        "autoprefixer": "^10.4.20",
+        "eslint": "^9.8.0",
+        "eslint-config-prettier": "^9.1.0",
+        "globals": "^15.0.0",
+        "prettier-plugin-organize-imports": "^4.0.0",
+        "publint": "^0.2.0",
+        "tsx": "^4.19.0",
+        "typescript": "^5.0.0",
+        "typescript-eslint": "^8.1.0",
+        "vitest": "^2.0.0"
+    },
+    "overrides": {
+        "eslint": "^9.8.0"
+    }
+}
