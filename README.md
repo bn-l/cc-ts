@@ -1,7 +1,6 @@
 
 # Cookiecutter typescript project template
 
-
 Very basic typescript starter project template.
 
 Features:
